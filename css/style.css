@@ -751,6 +751,8 @@
                 }
                 .img_shop {
                     width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 .img_shop::after {
                     width: 80%;
