@@ -306,7 +306,8 @@
             }
             
             .image {
-                background-size: cover;
+                width: 100%;
+                background-size: contain;
             }
             
             .text {
@@ -834,7 +835,7 @@
                     font-size: 1.7vw;
                 }
                 .news {
-                    width: 55%;
+                    width: 100%;
                     flex-direction: column;
                 }
                 .text {
