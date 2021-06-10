@@ -421,11 +421,12 @@
             }
             
             .search {
-                box-sizing: border-box;
                 margin-bottom: 50px;
                 background-color: #f4f7f6;
                 width: 220px;
                 height: 48px;
+                box-sizing: border-box;
+                border: none;
             }
             
             .magnifier {
@@ -449,6 +450,8 @@
                 width: 268px;
                 background-color: #f4f7f6;
                 margin-bottom: 20px;
+                box-sizing: border-box;
+                border: none;
             }
             
             .sub {
@@ -459,6 +462,7 @@
                 font-weight: bold;
                 font-size: 14px;
                 margin-bottom: 50px;
+                border: none;
             }
             
             .tags-page {
@@ -532,13 +536,15 @@
             
             .img_shop::after {
                 content: "";
-                border: solid 3px #75653b;
+                border: solid 3px #d3c59d;
                 position: absolute;
-                box-sizing: border-box;
-                height: 300px;
-                min-width: calc(65% / 3);
-                max-width: 80%;
-                margin-top: 10%;
+                min-height: 230px;
+                max-height: 280px;
+                min-width: calc(70% / 3);
+                max-width: 90%;
+                margin-top: 12%;
+                margin-left: -1%;
+                margin-right: -1%;
                 z-index: 3;
             }
             
@@ -552,10 +558,7 @@
                 flex-direction: column;
                 width: 100%;
                 font-size: 0.9rem;
-                font-weight: bold;
                 text-align: justify;
-                padding-left: 5%;
-                padding-right: 5%;
                 z-index: 2;
             }
             
@@ -565,7 +568,7 @@
             
             .text-shop a {
                 text-decoration: none;
-                color: #dacfac;
+                color: #b59f5b;
             }
             
             .butt-shop {
@@ -584,8 +587,8 @@
             }
             
             .butt {
-                width: 130px;
-                height: 50px;
+                width: 140px;
+                height: 45px;
                 background-color: #b59f5b;
                 border: solid 2px #b59f5b;
                 color: #ffffff;
@@ -663,32 +666,23 @@
                 }
                 .page,
                 .wrapper-shop,
-                .wrapper-trend {
+                .wrapper-trend,
+                .search-group,
+                .search,
+                .email-group,
+                .email {
                     width: 100%;
                 }
                 .sidebar {
                     margin-top: 60px;
                 }
-                .search-container,
-                .butt-email {
-                    margin-left: 10%;
-                    margin-right: 10%;
-                }
-                .search-group {
-                    width: 80%;
-                }
-                .search {
-                    width: 100%;
-                }
                 .magnifier {
                     width: 20%;
                 }
-                .email-group,
-                .email {
-                    width: 100%;
-                }
                 .tags-page,
-                .block-cat {
+                .block-cat,
+                .butt-email,
+                .search-container {
                     width: 80%;
                     margin-left: 10%;
                     margin-right: 10%;
@@ -803,8 +797,9 @@
                     margin-right: auto;
                 }
                 .img_shop::after {
-                    width: 80%;
-                    margin-top: 70%;
+                    margin-top: 75%;
+                    min-width: 85%;
+                    margin-left: -3%;
                 }
                 .img_shop:nth-child(1n+2) {
                     margin-top: 15%;
@@ -859,7 +854,7 @@
                     width: 40%;
                 }
                 .img_shop:nth-child(2n+2) {
-                    margin-left: 5%;
+                    margin-left: 10%;
                 }
                 .img_shop:nth-child(1n+3) {
                     margin-top: 10%;
@@ -869,8 +864,9 @@
                     padding-right: 5%;
                 }
                 .img_shop::after {
-                    width: calc(80% / 2);
+                    width: calc(87% / 2);
                     margin-top: 25%;
+                    margin-left: -2%;
                 }
             }
             
