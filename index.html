@@ -26,15 +26,18 @@
             </label>
             </form>
             <form class="user-poll">
-                <label class="question">
-                    <span> Вы подписаны на e-mail рассылку?</span>
-               <div class ="radio-button">
-                   <input class = "cheсked" type="radio" name="email-delivery"> <span>Да</span>
-                <input class = "cheсked" type="radio" name="email-delivery"> <span>Нет</span>
-               </div> 
-            
-            </label>
+                <span> Вы подписаны на e-mail рассылку?</span>
+               
+               <label class ="radio-button">
+                   <input class = "radio" type="radio" name="email-delivery"> <span class="circle" >Да</span>
+                </label>
+                <label class ="radio-button">
+                     <input class = "radio" type="radio" name="email-delivery"> <span class = "circle" >Нет</span>
+                </label>
+               
             </form>
+             
+            
             <form class="user-poll">
                 <label class="question">
                 <span>Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
@@ -96,9 +99,10 @@
         </div>
     </header>
 
-    <section>
-        <header class="heading-text">
-            <h2> <a href="#0" class="name-articles">Сейчас в тренде</a></h2>
+    <section class = "trend-container">
+        <header>
+            <h2 class="heading-text">
+                <a href="#0" class="name-articles">Сейчас в тренде</a></h2>
         </header>
         <div class="wrapper-trend">
             <article class="plants-content image-trend">
@@ -242,7 +246,7 @@
         <aside class="sidebar">
             <section>
                 <h3 class="heading-text">
-                    <a href="#0" class="name-articles">Новые посты</a>
+                    <a class="link" href="#0">Новые посты</a>
                 </h3>
                 <article class="content-articles">
                     <figure class="card-image">
@@ -295,13 +299,13 @@
                   <input class="search" placeholder="Найти...">
                 </label>
 
-                    <button class="magnifier" type="submit"><svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 512 512"><g clip-path="url(#clip0)"><path fill="#fff" stroke="#B59F5B" d="M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 122.192 62.271 206.72s68.765 153.293 153.293 153.293 153.293-68.765 153.293-153.293z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs></svg><span class="text-hidden"> Click to search</span></button>
+                    <button class="magnifier" type="submit"><svg class = "magnifier-size" xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" height="30px" viewBox="0 0 512 512"><g clip-path="url(#clip0)"><path fill="#fff" stroke="#B59F5B" d="M373.403 339.292l-.29.344.312.324 121.857 126.737c10.117 10.524 9.782 27.302-.733 37.42l.347.36-.347-.36c-4.948 4.763-11.466 7.383-18.338 7.383-7.261 0-14.034-2.884-19.072-8.116L334.357 375.686l-.297-.309-.351.246c-34.78 24.442-75.457 37.317-118.145 37.317-113.708 0-206.22-92.513-206.22-206.22C9.344 93.012 101.856.5 215.564.5c113.707 0 206.22 92.512 206.22 206.22 0 48.668-17.125 95.416-48.381 132.572zm-4.546-132.572c0-84.528-68.765-153.293-153.293-153.293S62.271 122.192 62.271 206.72s68.765 153.293 153.293 153.293 153.293-68.765 153.293-153.293z"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h512v512H0z"/></clipPath></defs></svg><span class="text-hidden"> Click to search</span></button>
                 </form>
             </section>
 
             <section>
                 <h3 class="heading-text">
-                    <a class="name-articles" href="#0">Рассылка</a>
+                    <a class="link" href="#0">Рассылка</a>
                 </h3>
                 <form class="user-form mailing">
                     <label class="group"><span class="text-hidden">Ваш email-адрес</span>
@@ -314,7 +318,7 @@
 
             <section class="tags-container">
                 <h3 class="heading-text">
-                    <a href="#0" class="name-articles">Теги</a></h3>
+                    <a class="link" href="#0">Теги</a></h3>
                 <ul class="list-objects">
                     <li class="list-tags"><a class="link" href="#0">Fashion</a></li>
                     <li class="list-tags"><a class="link" href="#0">Music</a></li>
@@ -328,7 +332,7 @@
             </section>
 
             <section class="topics">
-                <h3 class="heading-text"><a class="name-articles" href="#0">Темы</a></h3>
+                <h3 class="heading-text"><a class="link" href="#0">Темы</a></h3>
                 <ul>
                     <li class="topic">
                         <a class="link small-text" href="#0">Красота</a><span class="number">12</span>
@@ -354,8 +358,9 @@
     </div>
 
     <section class="shop">
-        <header class="heading-text">
-            <h2> Наши изделия</h2>
+        <header>
+            <h2 class="heading-text">
+                <a href="#0" class="name-articles">Наши изделия</a></h2>
         </header>
         <div class="wrapper-shop">
             <article class="product">
@@ -372,7 +377,7 @@
                 <div class="store-price">
                     <div>
                         <p class="old-price">1000 &#8381</p>
-                        <p>800 &#8381</p>
+                        <p class="new-price">800 &#8381</p>
                     </div>
                     <button class="store">В магазин</button>
                 </div>
@@ -389,7 +394,7 @@
                 </div>
                 <div class="store-price">
                     <div>
-                        <p>3500 &#8381</p>
+                        <p class="new-price">3500 &#8381</p>
                     </div>
                     <button class="store">В магазин</button>
                 </div>
@@ -407,7 +412,7 @@
                 <div class="store-price">
                     <div>
                         <p class="old-price">500 &#8381</p>
-                        <p>400 &#8381</p>
+                        <p class="new-price">400 &#8381</p>
                     </div>
 
                     <button class="store">В магазин</button>
