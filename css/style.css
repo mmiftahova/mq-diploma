@@ -193,7 +193,9 @@
     color: #ffffff;
 }
 /* trend */
-
+.trend-container{ 
+    width: 100%;
+}
 .heading-text {
     text-align: center;
     text-transform: uppercase;
@@ -217,19 +219,19 @@
     display: flex;
     box-sizing: border-box;
   justify-content: space-evenly;
-    
+    width: 100%;
     
 }
 
 .image-trend {
-    width: 24%;
+    width: 25%;
     height: 325px;
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
     box-sizing: border-box;
-    
+    margin-left: 10px;
     
 }
 
@@ -238,16 +240,16 @@
     position: absolute;
     display: flex;
     height: 325px;
-    width: 24%;
+    width: 24.5%;
     opacity: 0.5;
     background-color: #000000; 
-    box-sizing: border-box; 
-    
+    box-sizing: border-box;
+  
 }
 
 .plants-content {
     background-image: url("../images/trend1.jpg");
-    
+    margin-left: 0;
 }
 
 .cheese-content {
@@ -277,7 +279,7 @@
     z-index: 2;
 }
 
-.tags-trend h3 {
+.title-trend {
     font-size: 20px;
     
 }
@@ -379,7 +381,7 @@
     margin-left: 20px;
    
 }
-h4 .link {
+.title-posts {
     font-weight: bold;
     font-size: 14px;
 }
@@ -504,16 +506,12 @@ h4 .link {
     position: absolute;
     display: flex;
     align-self: center;
-    
-    margin-top: 150px;
+    margin-top: 12%;
     min-height: 250px;
     max-height: 350px;
     width: 25%;
-    padding: 20px;
     z-index: 3;
     opacity: 0.5;
-    
-    
 }
 
 .image-shop {
@@ -532,12 +530,12 @@ h4 .link {
     margin-top: 20px;
 }
 
-.text-shop h3 {
+.title-shop {
     text-transform: uppercase;
     font-size: 20px;
 }
 
-.text-shop a {
+.link-product {
     text-decoration: none;
     color: #b59f5b;
 }
@@ -645,9 +643,7 @@ h4 .link {
     .text-banner {
         font-size: 4vw;
     }
-    .group,
-    .search,
-    .email, .tags-container, .text-block {
+    .wide-block {
         width: 100%;
     }
     .news {
@@ -687,23 +683,19 @@ h4 .link {
         width: 40%;
     }
     .product::after {
-        width: 35%;
-       justify-content: flex-end;
-       margin-top: 250px;
+        width: 40%;
+        margin-top: 22%;
         
     }
-    .list-tags .link {
+    .font-small {
         font-size: 12px;
     }
     .text-posts {
         margin-left: 0;
         width: 100%;
     }
-     
-    .heading-text h2 {
-        font-size: 18px;
-    }
-    .tags_trend h3 {
+    
+    .title-trend {
         font-size: 16px;
     }
    
@@ -730,7 +722,7 @@ h4 .link {
         width: 100%;
         flex-direction: column;
     }
-    .heading-text, .name-articles {
+    .font-middle {
         font-size: 16px;
     }
     .container {
@@ -783,18 +775,19 @@ h4 .link {
         margin-top: 10px;
     }
     .product {
+        margin-bottom: 60px;
         width: 100%;
-        padding: 0 5%;
+        padding: 0 20px;
     }
     .product::after {
-        width: 85%;
-        margin-top: 350px;
+        width: 90%;
+        margin-top: 50%;
         height: 350px;
-        margin-left: 0;
-        padding-bottom: 0;
-       
     }
-    .product:nth-child(1n+2) {
+    .bunny {
+        margin-top: 100px;
+    }
+    .frame {
         margin-top: 100px;
     }
 }
@@ -806,7 +799,11 @@ h4 .link {
     .image-trend {
         width: 49%;
     }
-    .image-trend:nth-child(3n+1) {
+  
+    .mountains-content {
+        margin-bottom: 10px;
+    }
+    .vitamins-content { 
         margin-bottom: 10px;
     }
     .image-trend::after {
